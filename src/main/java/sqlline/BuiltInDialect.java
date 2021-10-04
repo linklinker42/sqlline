@@ -36,6 +36,9 @@ public enum BuiltInDialect implements Dialect {
 
   POSTGRESQL("PostgreSQL", '"', '"', "",
       new String[] {"--"}, BuiltInDialect.postgresPgSqlBlocksBoundaries()),
+  
+  REDSHIFT("Redshift", '"', '"', "",
+      new String[] {"--"}, BuiltInDialect.postgresPgSqlBlocksBoundaries()),
 
   ORACLE("Oracle", '"', '"', "",
       new String[] {"--"}, BuiltInDialect.oraclePLSqlBlocksBoundaries()),
